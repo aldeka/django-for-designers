@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #30305f;
+    font-family: 'Source Sans Pro', Arial;
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #30305f;
+}
+
+#content a {
+    color: #773388;
+}
+
+h1 a:hover, #content a:hover {
+    color: #b600af;
+}
+
+h1 {
+    font-weight: 900;
+    margin-top: 0;
+}
+
+h2, h3 {
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+h4, h5 {
+    font-weight: 400;
+}
+
+#footer, .metadata {
+    color: #8080af;
+}
+
+#authentication {
+    font-size: .9em;
+}
+
+#new-bookmark-widget {
+    width: 330px;
+    padding: 5px 15px;
+    float: right;
+    background: #f0f0ff;
+}
+
+#new-bookmark-widget h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+#new-bookmark-widget p {
+    margin: 4px 0;
+    font-size: .9em;
+}
+
+#new-bookmark-widget input {
+    width: 100%;
+}
+
+#new-bookmark-widget button {
+    float: right;
+}
+
+.error {
+    color: red;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 30px;
+}
+
+#content {
+    clear: both;
+}
+
+.bookmarks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bookmarks li {
+    padding: 5px 10px 10px;
+}
+
+.bookmarks li:hover {
+    background: #f0f0ff;
+}
+
+.bookmark-link {
+    display: block;
+}
+
+.metadata {
+    font-size: .85em;
+    font-weight: 200;
+}
+
+.metadata a {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#footer {
+    margin-top: 30px;
+}
