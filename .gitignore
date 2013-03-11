@@ -42,3 +42,4 @@ local/*
 *.pyc
 *~
 *.db
+.Python*
