@@ -11,6 +11,13 @@
         <div id="header">
             {% block bookmark_widget %}
             {% endblock %}
+            <div id="authentication">
+            {% if user.is_authenticated %}
+                Hi {{user}}! <a href="{% url 'django.contrib.auth.views.logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'django.contrib.auth.views.login' %}">Login</a>
+            {% endif %}
+            </div>
             <h1><a href="/">My bookmarking app</a></h1>
         </div>
         <div id="content">
