@@ -5,18 +5,7 @@
 {% block content %}
 <ul class="bookmarks">
     {% for bookmark in bookmarks %}
-    <li>
-		<a class="bookmark-link" href="{{ bookmark.url }}">
-		    {% if bookmark.title %}{{ bookmark.title }}{% else %}{{ bookmark.url }}{% endif %}
-		</a>
-		<div class="metadata"><span class="author">Posted by {{ bookmark.author }}</span> | <span class="timestamp">{{ bookmark.timestamp|date:"Y-m-d" }}</span>
-		        {% if bookmark.tag_set.all %}| <span class="tags">
-		            {% for tag in bookmark.tag_set.all %}
-		                <a href="{% url 'bookmarks.views.tag' tag.slug %}">{{ tag.slug }}</a></span>
-		            {% endfor %}
-		        {% endif %}
-		</div>
-    </li>
+		{% include 'bookmark.html' %}
     {% endfor %}
 </ul>
 {% endblock %}
