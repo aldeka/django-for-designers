@@ -8,5 +8,7 @@ def index(request):
 
 
 def tag(request, tag_name):
-    return HttpResponse("This is a tag: <strong>%s</strong>" % (tag_name,))
-    
+    context = {
+        'tag': tag_name,
+    }
+    return render(request, 'tag.html', context)
