@@ -9,3 +9,4 @@ class BookmarkForm(forms.ModelForm):
         widgets = {
             'author': forms.HiddenInput(),
         }
+    tags = forms.CharField(max_length=100, required=False)
