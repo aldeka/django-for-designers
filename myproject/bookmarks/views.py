@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from bookmarks.models import Bookmark, Tag
 
  
@@ -12,7 +12,7 @@ def index(request):
 
 
 def tag(request, tag_name):
-    tag = Tag.objects.get(slug=tag_name)
+    tag = get_object_or_404(Tag, slug=tag_name)
     bookmarks = tag.bookmarks.all()
     context = {
         'tag': tag,
