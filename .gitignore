@@ -42,5 +42,5 @@ local/*
 *.pyc
 *~
 *.db
-.Python*
+.Python
 .DS_Store
